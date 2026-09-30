@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Trip Planner | TerraTrails</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        🌿 TerraTrails
+    </a>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="explore.html">
+            Explore
+        </a>
+
+        <a href="adventures.html">
+            Adventures
+        </a>
+
+        <a class="active" href="planner.html">
+            Planner
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
+
+    <button id="themeBtn" class="theme-btn">
+        🌙
+    </button>
+
+</header>
+
+
+<section class="page-header">
+
+    <p>PLAN YOUR JOURNEY</p>
+
+    <h1>Trip Planner</h1>
+
+    <span>
+        Create your own personalized TerraTrail.
+    </span>
+
+</section>
+
+
+<section class="section">
+
+    <div class="planner-layout">
+
+
+        <form id="tripForm" class="planner-form">
+
+            <h2>Create Your Trip</h2>
+
+            <p>
+                Enter your details and we'll create your
+                travel plan.
+            </p>
+
+
+            <label>
+                Your Name
+            </label>
+
+            <input
+                id="travelerName"
+                type="text"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label>
+                Destination
+            </label>
+
+            <select
+                id="tripDestination"
+                required>
+
+                <option value="">
+                    Choose destination
+                </option>
+
+                <option>Manali</option>
+
+                <option>Ladakh</option>
+
+                <option>Munnar</option>
+
+                <option>Jim Corbett</option>
+
+                <option>Jaisalmer</option>
+
+                <option>Goa</option>
+
+            </select>
+
+
+            <label>
+                Start Date
+            </label>
+
+            <input
+                id="startDate"
+                type="date"
+                required
+            >
+
+
+            <label>
+                Number of Days
+            </label>
+
+            <input
+                id="days"
+                type="number"
+                min="1"
+                max="30"
+                placeholder="5"
+                required
+            >
+
+
+            <label>
+                Travel Style
+            </label>
+
+            <select id="travelStyle">
+
+                <option>
+                    Adventure
+                </option>
+
+                <option>
+                    Nature
+                </option>
+
+                <option>
+                    Relaxation
+                </option>
+
+                <option>
+                    Photography
+                </option>
+
+                <option>
+                    Wildlife
+                </option>
+
+            </select>
+
+
+            <button
+                type="submit"
+                class="btn primary-btn">
+
+                Create My Trip
+
+            </button>
+
+        </form>
+
+
+        <div id="tripResult"
+             class="planner-result">
+
+            <div>
+                🧭
+            </div>
+
+            <h2>
+                Your Trip
+            </h2>
+
+            <p>
+                Fill the form to generate your
+                personalized travel plan.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">
+        🌿 TerraTrails
+    </div>
+
+    <p>
+        Explore beyond the ordinary.
+    </p>
+
+    <small>
+        © 2026 TerraTrails
+    </small>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

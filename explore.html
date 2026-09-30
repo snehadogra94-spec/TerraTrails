@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Explore | TerraTrails</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        🌿 TerraTrails
+    </a>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a class="active" href="explore.html">
+            Explore
+        </a>
+
+        <a href="adventures.html">
+            Adventures
+        </a>
+
+        <a href="planner.html">
+            Planner
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
+
+    <button id="themeBtn" class="theme-btn">
+        🌙
+    </button>
+
+</header>
+
+
+<!-- PAGE HEADER -->
+
+<section class="page-header">
+
+    <p>DISCOVER YOUR NEXT DESTINATION</p>
+
+    <h1>Explore the World</h1>
+
+    <span>
+        Find beautiful places and unforgettable experiences.
+    </span>
+
+</section>
+
+
+<!-- SEARCH -->
+
+<section class="section">
+
+    <div class="search-area">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search destination..."
+        >
+
+        <select id="categoryFilter">
+
+            <option value="all">
+                All Destinations
+            </option>
+
+            <option value="mountain">
+                Mountains
+            </option>
+
+            <option value="forest">
+                Forests
+            </option>
+
+            <option value="desert">
+                Deserts
+            </option>
+
+            <option value="beach">
+                Beaches
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div class="destination-grid">
+
+
+        <!-- MANALI -->
+
+        <div class="destination-card"
+             data-name="manali"
+             data-category="mountain">
+
+            <div class="destination-image manali">
+
+                <span class="tag">
+                    Mountain
+                </span>
+
+                <button class="favorite">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="destination-content">
+
+                <small>
+                    📍 Himachal Pradesh
+                </small>
+
+                <h2>Manali</h2>
+
+                <p>
+                    Snow-covered mountains, peaceful valleys
+                    and exciting adventures.
+                </p>
+
+                <div class="card-bottom">
+
+                    <span>⭐ 4.8</span>
+
+                    <button
+                        onclick="showDestination('Manali')">
+
+                        Explore →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- LADAKH -->
+
+        <div class="destination-card"
+             data-name="ladakh"
+             data-category="mountain">
+
+            <div class="destination-image ladakh">
+
+                <span class="tag">
+                    Mountain
+                </span>
+
+                <button class="favorite">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="destination-content">
+
+                <small>
+                    📍 Ladakh
+                </small>
+
+                <h2>Ladakh</h2>
+
+                <p>
+                    Dramatic mountains, high-altitude roads
+                    and unforgettable landscapes.
+                </p>
+
+                <div class="card-bottom">
+
+                    <span>⭐ 4.9</span>
+
+                    <button
+                        onclick="showDestination('Ladakh')">
+
+                        Explore →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MUNNAR -->
+
+        <div class="destination-card"
+             data-name="munnar"
+             data-category="forest">
+
+            <div class="destination-image munnar">
+
+                <span class="tag">
+                    Forest
+                </span>
+
+                <button class="favorite">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="destination-content">
+
+                <small>
+                    📍 Kerala
+                </small>
+
+                <h2>Munnar</h2>
+
+                <p>
+                    Green hills, tea plantations and peaceful
+                    natural surroundings.
+                </p>
+
+                <div class="card-bottom">
+
+                    <span>⭐ 4.9</span>
+
+                    <button
+                        onclick="showDestination('Munnar')">
+
+                        Explore →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- JIM CORBETT -->
+
+        <div class="destination-card"
+             data-name="jim corbett"
+             data-category="forest">
+
+            <div class="destination-image corbett">
+
+                <span class="tag">
+                    Wildlife
+                </span>
+
+                <button class="favorite">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="destination-content">
+
+                <small>
+                    📍 Uttarakhand
+                </small>
+
+                <h2>Jim Corbett</h2>
+
+                <p>
+                    Wildlife, forests, nature walks and
+                    exciting safaris.
+                </p>
+
+                <div class="card-bottom">
+
+                    <span>⭐ 4.8</span>
+
+                    <button
+                        onclick="showDestination('Jim Corbett')">
+
+                        Explore →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- JAISALMER -->
+
+        <div class="destination-card"
+             data-name="jaisalmer"
+             data-category="desert">
+
+            <div class="destination-image jaisalmer">
+
+                <span class="tag">
+                    Desert
+                </span>
+
+                <button class="favorite">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="destination-content">
+
+                <small>
+                    📍 Rajasthan
+                </small>
+
+                <h2>Jaisalmer</h2>
+
+                <p>
+                    Golden sand dunes, desert camps and
+                    spectacular sunsets.
+                </p>
+
+                <div class="card-bottom">
+
+                    <span>⭐ 4.7</span>
+
+                    <button
+                        onclick="showDestination('Jaisalmer')">
+
+                        Explore →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- GOA -->
+
+        <div class="destination-card"
+             data-name="goa"
+             data-category="beach">
+
+            <div class="destination-image goa">
+
+                <span class="tag">
+                    Beach
+                </span>
+
+                <button class="favorite">
+                    ♡
+                </button>
+
+            </div>
+
+            <div class="destination-content">
+
+                <small>
+                    📍 Goa
+                </small>
+
+                <h2>Goa</h2>
+
+                <p>
+                    Beaches, palm trees, coastal landscapes
+                    and beautiful sunsets.
+                </p>
+
+                <div class="card-bottom">
+
+                    <span>⭐ 4.6</span>
+
+                    <button
+                        onclick="showDestination('Goa')">
+
+                        Explore →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MODAL -->
+
+<div id="destinationModal" class="modal">
+
+    <div class="modal-box">
+
+        <button
+            class="close"
+            onclick="closeDestination()">
+
+            ×
+
+        </button>
+
+        <div id="destinationDetails"></div>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <div class="footer-logo">
+        🌿 TerraTrails
+    </div>
+
+    <p>
+        Explore beyond the ordinary.
+    </p>
+
+    <small>
+        © 2026 TerraTrails
+    </small>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
